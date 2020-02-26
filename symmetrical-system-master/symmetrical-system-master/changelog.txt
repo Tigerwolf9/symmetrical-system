@@ -1,0 +1,70 @@
+--To fix/add--
+
+-Random death chance
+--Capsules eat cubes and die
+
+-Sphere AI
+--Spheres go to the old position of Capsules, fixing it causes Capsules to constantly change targets
+
+-More species
+--With the modularization, it wouldn't be terribly hard to create more species, I'd just have to balance it again
+
+-Random stat variations
+--Not too important, but it'd add some spicy variation to everything. Stats as in hunger, maxreproduction, colour, size, speed(?), etc
+
+-Camera movement
+--This would allow for larger maps and/or zooming in
+
+-Hover UI
+--Hover over an object to see its stats
+
+-Better map
+--More than just a square, possibly with colours and variations(maybe even biomes or even procedurally generated)
+
+-Menu/UI
+--A main menu would be nice, as well as some options to pause/play, speed up/down, etc
+--Add UI elements that change things like mobcap
+--Main Menu created with options to play and quit
+
+-Animal Configuration
+--In between Main Menu and the Simulation, add a scene that allows for the configuration of Cube and Capsule variables
+--This would allow the simulation to be editable and have control variables to see what each variable's effect is
+
+
+--If really bored--
+
+-Weather
+--And, obviously, make it affect the plants and animals
+
+-Water
+--Realistically, animals don't just require food, they also require a source of water. Adding one would add realism and limitations
+
+-Disease
+--Randomly infect certain animals with disease
+
+
+--Fixed/Added--
+
+-Capsules constantly changing targets as they move
+--They need to pick a target, go to it, then set a new target
+--They seem to do this now
+
+-Capsule swarms
+--Capsules target the same object, so they end up moving in a large swarm. Make them more individualistic
+--While still moving in large groups, they have more individualism and don't target the same object
+
+-Plant and Animal caps
+--Imposing a cap would mean an unnecessarily large number of plants or animals aren't produced, allowing the simulation to run faster
+--It isn't perfect, but it does work(They can go over the cap, but can't reproduce after that)
+
+-Balance Ecosystem
+--The ecosystem either quickly dies or grows too rapidly; seek a balance of sustainability
+--Imposing the mob cap now allows for sustainability
+
+-Cubes grow out of bounds
+--With the new system, cubes have no limit on how far they can grow, meaning they can grow further than the walls
+--I just removed the old system of growing near each other, and made them grow randomly anywhere in the map
+
+-Cubes spawn and die at once
+--Cubes spawn and die in very similar time periods, giving the effect of something akin to a heartbeat
+--Technically not fixed, the mob cap makes it worse. I don't think this is fixable
